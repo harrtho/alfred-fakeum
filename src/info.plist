@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>bundleid</key>
-	<string>net.deanishe.alfred-fakeum</string>
+	<string>de.xdevcloud.alfred-fakeum</string>
 	<key>connections</key>
 	<dict>
 		<key>03F09777-FA2A-45F3-A8A8-49AA079FFC61</key>
@@ -300,7 +300,7 @@
 		</array>
 	</dict>
 	<key>createdby</key>
-	<string>Dean Jackson</string>
+	<string>Thomas Harr</string>
 	<key>description</key>
 	<string>Generate Fake Data</string>
 	<key>disabled</key>
@@ -1091,8 +1091,8 @@ vars={allvars}
 		<string>SHOW_NOTIFICATIONS</string>
 	</array>
 	<key>version</key>
-	<string>2.2.2</string>
+	<string>3.0.0</string>
 	<key>webaddress</key>
-	<string></string>
+	<string>https://github.com/harrtho/alfred-fakeum</string>
 </dict>
 </plist>
