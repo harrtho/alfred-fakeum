@@ -1,38 +1,33 @@
-Alfred Fakeum
-=============
+# Alfred Fakeum
 
 Generate fake test data in Alfred for testing. Based on [Faker][faker].
 
 ![][demo]
 
-
-Download & installation
------------------------
+## Download & installation
 
 Download the workflow from [GitHub][gh-releases], then double-click to install.
 
 **Note**: Files with the extension `alfred3workflow` are not compatible with Alfred 2.
 
-
-Usage
------
+## Usage
 
 - `fake [<query>]` — List/filter available fake data types
-    - `↩`, `⌘+C` or `⌘+NUM` — Copy one fake datum to clipboard
-    - `⌘+↩` — Paste fake datum into frontmost app
-    - `⇥` — Specify number of datasets to copy to clipboard
-    - `⌘+L` — Show generated data in Alfred's Large Text window
+  - `↩`, `⌘+C` or `⌘+NUM` — Copy one fake datum to clipboard
+  - `⌘+↩` — Paste fake datum into frontmost app
+  - `⇥` — Specify number of datasets to copy to clipboard
+  - `⌘+L` — Show generated data in Alfred's Large Text window
 - `fakeconfig [<query>]` — Edit workflow settings
-    - `An update is available` / `Check for update` — Check for and/or install an updated version of the workflow
-    - `Notifications` — Turn notifications on/off
-        - `↩` — Toggle on/off
-    - `Locales` — Turn locales for fake data on/off
-        - `↩` — Show & edit active locales
-            - `[<query>]` — Filter locales
-            - `↩` — Toggle locale on/off
-    - `Documentation` — Open GitHub README in your browser
-    - `Report Problem` — Open the issue tracker in your brower
-    - `Get Help` — Open the workflow's thread on AlfredForum.com in your browser
+  - `An update is available` / `Check for update` — Check for and/or install an updated version of the workflow
+  - `Notifications` — Turn notifications on/off
+    - `↩` — Toggle on/off
+  - `Locales` — Turn locales for fake data on/off
+    - `↩` — Show & edit active locales
+      - `[<query>]` — Filter locales
+      - `↩` — Toggle locale on/off
+  - `Documentation` — Open GitHub README in your browser
+  - `Report Problem` — Open the issue tracker in your brower
+  - `Get Help` — Open the workflow's thread on AlfredForum.com in your browser
 
 If you specify multiple data, e.g. `fake Name ✕ 10` for 10 names, the data will be separated by newlines (`\n`).
 
@@ -40,11 +35,10 @@ In the case of `Paragraph` and `Address` types, the data will be separated by tw
 
 There is also a **Snippet Trigger** (`xxfake` by default) to insert fake data directly into other applications.
 
+## Supported data types
 
-## Supported data types ##
-
-|           Name           |                                                                                           Example                                                                                            |
-|--------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Name                     | Example                                                                                                                                                                                      |
+| ------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Name                     | Dr. Venie Mayer DVM                                                                                                                                                                          |
 | First Name               | Mercedes                                                                                                                                                                                     |
 | Last Name                | Greco                                                                                                                                                                                        |
@@ -119,10 +113,7 @@ There is also a **Snippet Trigger** (`xxfake` by default) to insert fake data di
 | UUID4                    | 5dcc0030-d216-418c-863d-bd3946594970                                                                                                                                                         |
 | Password (not secure!!)  | +AU86ZEs&X                                                                                                                                                                                   |
 
-
-
-Supported locales
------------------
+## Supported locales
 
 **Note**: Not all locales support all data types.
 
@@ -182,9 +173,7 @@ Supported locales
 - Turkish
 - Ukranian
 
-
-Licensing, thanks
------------------
+## Licensing, thanks
 
 Icons are from [Font Awesome][font-awesome] and [Material Design Iconic Font](material-icons) (both [SIL OFL 1.1 Licence][sil]).
 
