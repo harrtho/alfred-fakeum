@@ -1,6 +1,3 @@
-# coding: utf-8
-
-from __future__ import unicode_literals
 from .. import Provider as DateTimeProvider
 
 
@@ -32,7 +29,7 @@ class Provider(DateTimeProvider):
     }
 
     def day_of_week(self):
-        day = self.date('%w')
+        day = self.date("%w")
         return self.DAY_NAMES[day]
 
     def month_name(self):

@@ -1,12 +1,8 @@
-# coding=utf-8
-
-from __future__ import unicode_literals
 from .. import Provider as SsnProvider
 
 
 class Provider(SsnProvider):
-
-    def ssn(self):
+    def ssn(self) -> str:
         """
         Returns an Israeli identity number, known as Teudat Zehut ("tz").
 

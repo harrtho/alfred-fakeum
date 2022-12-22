@@ -1,7 +1,8 @@
-#!/usr/bin/python
+#!/usr/bin/env python3
 # encoding: utf-8
 #
-# Copyright (c) 2014 deanishe@deanishe.net
+# Copyright (c) 2022 Thomas Harr <xDevThomas@gmail.com>
+# Copyright (c) 2014 Dean Jackson <deanishe@deanishe.net>
 #
 # MIT Licence. See http://opensource.org/licenses/MIT
 #
@@ -10,26 +11,19 @@
 
 """Alfred workflow to generate test data."""
 
-from __future__ import print_function, absolute_import
 
-from collections import OrderedDict
 import datetime
 import os
 import random
 import sys
+from collections import OrderedDict
 
-from workflow import Workflow3, ICON_WARNING, MATCH_ALL, MATCH_ALLCHARS
+from common import DEFAULT_SETTINGS, ISSUE_URL, UPDATE_SETTINGS, intvar
+from workflow import ICON_WARNING, MATCH_ALL, MATCH_ALLCHARS, Workflow
 from workflow.util import run_trigger
 
-from common import (
-    DEFAULT_SETTINGS,
-    ISSUE_URL,
-    UPDATE_SETTINGS,
-    intvar,
-)
-
 # Query delimiter that separates faker name from quantity
-DELIMITER = u'✕'
+DELIMITER = '✕'
 
 # Number of sentences per paragraph of Lipsum text
 LIPSUMS = intvar('LIPSUM_SENTENCES', 3)
@@ -170,8 +164,8 @@ def get_fake_datum(name):
     elif isinstance(datum, datetime.datetime):
         datum = datum.strftime('%Y-%m-%d %H:%M:%S')
 
-    elif not isinstance(datum, basestring):
-        log.debug(u'%s : (%s) %r', name, datum.__class__, datum)
+    elif not isinstance(datum, str):
+        log.debug('%s : (%s) %r', name, datum.__class__, datum)
 
     return datum
 
@@ -216,7 +210,7 @@ def main(wf):
     """Run workflow."""
     if wf.update_available:
         wf.add_item('A newer version is available',
-                    u'↩ to install update',
+                    '↩ to install update',
                     autocomplete='workflow:update',
                     icon='update-available.png')
 
@@ -239,7 +233,7 @@ def main(wf):
 
         if count:
             if not count.isdigit():
-                wf.add_item(u'Not a number : ' + count,
+                wf.add_item('Not a number : ' + count,
                             'Please enter a number',
                             icon=ICON_WARNING)
                 wf.send_feedback()
@@ -276,12 +270,12 @@ def main(wf):
         subtitle = data
         if count:
             example = data.split('\n')[0].strip()
-            subtitle = u'{} ✕ e.g. "{}"'.format(count, example)
+            subtitle = '{} ✕ e.g. "{}"'.format(count, example)
 
         it = wf.add_item(name,
                          subtitle,
                          arg=data,
-                         autocomplete=u'{} {} '.format(name, DELIMITER),
+                         autocomplete='{} {} '.format(name, DELIMITER),
                          valid=True,
                          largetext=data,
                          copytext=data)
@@ -300,7 +294,7 @@ def main(wf):
 
 
 if __name__ == '__main__':
-    wf = Workflow3(default_settings=DEFAULT_SETTINGS,
+    wf = Workflow(default_settings=DEFAULT_SETTINGS,
                    update_settings=UPDATE_SETTINGS,
                    help_url=ISSUE_URL,
                    libraries=['./libs'])

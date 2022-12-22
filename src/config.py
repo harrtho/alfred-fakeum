@@ -1,7 +1,8 @@
-#!/usr/bin/python
+#!/usr/bin/env python3
 # encoding: utf-8
 #
-# Copyright (c) 2014 deanishe@deanishe.net
+# Copyright (c) 2022 Thomas Harr <xDevThomas@gmail.com>
+# Copyright (c) 2014 Dean Jackson <deanishe@deanishe.net>
 #
 # MIT Licence. See http://opensource.org/licenses/MIT
 #
@@ -24,32 +25,15 @@ Options:
     -h, --help                     Show this help message and exit
 """
 
-from __future__ import print_function, absolute_import
-
 
 import sys
 
-from workflow import Workflow3, ICON_WARNING
+from common import (ALL_LOCALES, DEFAULT_SETTINGS, DOCS_URL, HELP_URL,
+                    ICON_DOCS, ICON_HELP, ICON_ISSUE, ICON_LOCALES, ICON_OFF,
+                    ICON_ON, ICON_UPDATE_AVAILABLE, ICON_UPDATE_CHECK,
+                    ISSUE_URL, UPDATE_SETTINGS, boolvar)
+from workflow import ICON_WARNING, Workflow
 from workflow.util import run_trigger, set_config
-
-from common import (
-    ALL_LOCALES,
-    DEFAULT_SETTINGS,
-    DOCS_URL,
-    HELP_URL,
-    ISSUE_URL,
-    ICON_DOCS,
-    ICON_HELP,
-    ICON_ISSUE,
-    ICON_ON,
-    ICON_OFF,
-    ICON_LOCALES,
-    ICON_UPDATE_AVAILABLE,
-    ICON_UPDATE_CHECK,
-    UPDATE_SETTINGS,
-    boolvar,
-)
-
 
 log = None
 
@@ -59,11 +43,11 @@ def filter_options(query):
     options = []
     if wf.update_available:
         title = 'An update is available'
-        subtitle = u'↩ or ⇥ to install update'
+        subtitle = '↩ or ⇥ to install update'
         icon = ICON_UPDATE_AVAILABLE
     else:
         title = 'Check for update'
-        subtitle = u'↩ or ⇥ to check for update'
+        subtitle = '↩ or ⇥ to check for update'
         icon = ICON_UPDATE_CHECK
 
     options = [
@@ -150,11 +134,11 @@ def toggle_locale(loc):
     is_active = loc in active
 
     if is_active:
-        log.info(u'Deactivated locale %s', ALL_LOCALES.get(loc))
+        log.info('Deactivated locale %s', ALL_LOCALES.get(loc))
         active.remove(loc)
         wf.settings['locales'] = active
     else:
-        log.info(u'Activated locale %s', ALL_LOCALES.get(loc))
+        log.info('Activated locale %s', ALL_LOCALES.get(loc))
         active.append(loc)
         wf.settings['locales'] = active
 
@@ -207,7 +191,7 @@ def main(wf):
 
 
 if __name__ == '__main__':
-    wf = Workflow3(default_settings=DEFAULT_SETTINGS,
+    wf = Workflow(default_settings=DEFAULT_SETTINGS,
                    update_settings=UPDATE_SETTINGS,
                    help_url=HELP_URL,
                    libraries=['./libs'])

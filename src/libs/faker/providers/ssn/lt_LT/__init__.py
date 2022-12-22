@@ -1,4 +1,3 @@
-# coding=utf-8
 from .. import Provider as BaseProvider
 
 
@@ -8,11 +7,11 @@ class Provider(BaseProvider):
     """
 
     vat_id_formats = (
-        'LT#########',
-        'LT############',
+        "LT#########",
+        "LT############",
     )
 
-    def vat_id(self):
+    def vat_id(self) -> str:
         """
         http://ec.europa.eu/taxation_customs/vies/faq.html#item_11
         :return: a random Lithuanian VAT ID

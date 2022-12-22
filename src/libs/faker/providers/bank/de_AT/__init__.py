@@ -2,5 +2,7 @@ from .. import Provider as BankProvider
 
 
 class Provider(BankProvider):
-    bban_format = '################'
-    country_code = 'AT'
+    """Implement bank provider for ``de_AT`` locale."""
+
+    bban_format = "################"
+    country_code = "AT"

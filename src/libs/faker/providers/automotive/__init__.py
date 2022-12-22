@@ -1,17 +1,22 @@
-# coding=utf-8
-
-from .. import BaseProvider
-from string import ascii_uppercase
 import re
+
+from string import ascii_uppercase
+
+from .. import BaseProvider, ElementsType
 
 localized = True
 
 
 class Provider(BaseProvider):
-    license_formats = ()
+    """Implement default automotive provider for Faker."""
 
-    def license_plate(self):
-        temp = re.sub(r'\?',
-                      lambda x: self.random_element(ascii_uppercase),
-                      self.random_element(self.license_formats))
+    license_formats: ElementsType = ()
+
+    def license_plate(self) -> str:
+        """Generate a license plate."""
+        temp = re.sub(
+            r"\?",
+            lambda x: self.random_element(ascii_uppercase),
+            self.random_element(self.license_formats),
+        )
         return self.numerify(temp)

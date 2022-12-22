@@ -1,6 +1,7 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # encoding: utf-8
 #
+# Copyright (c) 2022 Thomas Harr <xDevThomas@gmail.com>
 # Copyright (c) 2017 Dean Jackson <deanishe@deanishe.net>
 #
 # MIT Licence. See http://opensource.org/licenses/MIT
@@ -10,14 +11,12 @@
 
 """Common workflow variables and functions."""
 
-from __future__ import print_function, absolute_import
 
-from collections import OrderedDict
 import logging
 import os
+from collections import OrderedDict
 
 from workflow import Variables
-
 
 log = logging.getLogger('workflow')
 
@@ -33,7 +32,7 @@ DEFAULT_SETTINGS = {
 }
 
 DOCS_URL = 'https://github.com/deanishe/alfred-fakeum/blob/master/README.md'
-HELP_URL = u'https://www.alfredforum.com/topic/5319-fakeum-—-generate-fake-test-datasets-in-alfred/'
+HELP_URL = 'https://www.alfredforum.com/topic/5319-fakeum-—-generate-fake-test-datasets-in-alfred/'
 ISSUE_URL = 'https://github.com/deanishe/alfred-fakeum/issues'
 UPDATE_SETTINGS = {'github_slug': 'deanishe/alfred-fakeum'}
 

@@ -192,15 +192,15 @@ Alfred Fakum uses the following libraries:
 
 - [Faker][faker] ([MIT Licence][faker-licence])
 - [docopt][docopt] ([MIT Licence][mit])
-- [Alfred-Workflow][alfred-workflow] ([MIT Licence][mit])
+- [Alfred-PyWorkflow][alfred-pyworkflow] ([MIT Licence][mit])
 
-[gh-releases]: https://github.com/deanishe/alfred-fakeum/releases/latest
+[gh-releases]: https://github.com/harrtho/alfred-fakeum/releases/latest
 [mit]: http://opensource.org/licenses/MIT
-[alfred-workflow]: http://www.deanishe.net/alfred-workflow/
+[alfred-pyworkflow]: http://www.harrtho.net/alfred-pyworkflow/
 [font-awesome]: http://fortawesome.github.io/Font-Awesome/
 [material-icons]: http://zavoloklom.github.io/material-design-iconic-font/
 [docopt]: http://docopt.org/
 [faker]: https://github.com/joke2k/faker
 [faker-licence]: https://github.com/joke2k/faker/blob/master/LICENSE.txt
 [sil]: http://scripts.sil.org/OFL
-[demo]: https://raw.githubusercontent.com/deanishe/alfred-fakeum/master/demo.gif
+[demo]: https://raw.githubusercontent.com/harrtho/alfred-fakeum/master/demo.gif
