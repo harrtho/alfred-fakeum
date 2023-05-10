@@ -63,9 +63,9 @@ There is also a **Snippet Trigger** (`xxfake` by default) to insert fake data di
 | Domain Word              | milani                                                                                                                                                                                       |
 | IP Address (IPv4)        | 177.119.72.157                                                                                                                                                                               |
 | IP Address (IPv6)        | 4f17:280f:7cdb:0834:dac1:3841:9520:a42f                                                                                                                                                      |
-| URI                      | http://greco-piras.org/search.htm                                                                                                                                                            |
+| URI                      | https://greco-piras.org/search.htm                                                                                                                                                           |
 | URI path                 | app/posts/main                                                                                                                                                                               |
-| URL                      | http://www.soeding.de/                                                                                                                                                                       |
+| URL                      | https://www.soeding.de/                                                                                                                                                                      |
 | User-Agent               | Mozilla/5.0 (compatible; MSIE 6.0; Windows NT 6.1; Trident/3.0)                                                                                                                              |
 | Corporate BS             | orchestrate magnetic eyeballs                                                                                                                                                                |
 | Corporate catchphrase    | Versatile global productivity                                                                                                                                                                |
@@ -184,12 +184,12 @@ Alfred Fakum uses the following libraries:
 - [Alfred-PyWorkflow][alfred-pyworkflow] ([MIT Licence][mit])
 
 [gh-releases]: https://github.com/harrtho/alfred-fakeum/releases/latest
-[mit]: http://opensource.org/licenses/MIT
-[alfred-pyworkflow]: http://www.harrtho.net/alfred-pyworkflow/
-[font-awesome]: http://fortawesome.github.io/Font-Awesome/
-[material-icons]: http://zavoloklom.github.io/material-design-iconic-font/
-[docopt]: http://docopt.org/
 [faker]: https://github.com/joke2k/faker
 [faker-licence]: https://github.com/joke2k/faker/blob/master/LICENSE.txt
-[sil]: http://scripts.sil.org/OFL
+[alfred-pyworkflow]: https://github.com/harrtho/alfred-pyworkflow/
 [demo]: https://raw.githubusercontent.com/harrtho/alfred-fakeum/master/demo.gif
+[docopt]: https://docopt.org/
+[font-awesome]: https://fortawesome.github.io/Font-Awesome/
+[material-icons]: https://zavoloklom.github.io/material-design-iconic-font/
+[mit]: https://opensource.org/licenses/MIT
+[sil]: https://scripts.sil.org/OFL
