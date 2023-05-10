@@ -1,5 +1,9 @@
 # Alfred Fakeum
 
+[![GitHub Version][version-shield]][releases]
+[![GitHub All Releases][downloads-shield]][releases]
+[![GitHub][licence-shield]][mit-licence]
+
 Generate fake test data in Alfred for testing. Based on [Faker][faker].
 
 ![][demo]
@@ -183,13 +187,18 @@ Alfred Fakum uses the following libraries:
 - [docopt][docopt] ([MIT Licence][mit])
 - [Alfred-PyWorkflow][alfred-pyworkflow] ([MIT Licence][mit])
 
-[gh-releases]: https://github.com/harrtho/alfred-fakeum/releases/latest
-[faker]: https://github.com/joke2k/faker
-[faker-licence]: https://github.com/joke2k/faker/blob/master/LICENSE.txt
 [alfred-pyworkflow]: https://github.com/harrtho/alfred-pyworkflow/
 [demo]: https://raw.githubusercontent.com/harrtho/alfred-fakeum/master/demo.gif
 [docopt]: https://docopt.org/
+[downloads-shield]: https://img.shields.io/github/downloads/harrtho/alfred-fakeum/total.svg
+[faker-licence]: https://github.com/joke2k/faker/blob/master/LICENSE.txt
+[faker]: https://github.com/joke2k/faker
 [font-awesome]: https://fortawesome.github.io/Font-Awesome/
+[gh-releases]: https://github.com/harrtho/alfred-fakeum/releases/latest
+[licence-shield]: https://img.shields.io/github/license/harrtho/alfred-fakeum.svg
 [material-icons]: https://zavoloklom.github.io/material-design-iconic-font/
+[mit-licence]: https://opensource.org/licenses/MIT
 [mit]: https://opensource.org/licenses/MIT
+[releases]: https://github.com/harrtho/alfred-fakeum/releases
 [sil]: https://scripts.sil.org/OFL
+[version-shield]: https://img.shields.io/github/release/harrtho/alfred-fakeum.svg
