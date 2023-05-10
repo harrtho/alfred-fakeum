@@ -2,7 +2,7 @@
 
 [![GitHub Version][version-shield]][releases]
 [![GitHub All Releases][downloads-shield]][releases]
-[![GitHub][licence-shield]][mit-licence]
+[![GitHub][license-shield]][mit-license]
 
 Generate fake test data in Alfred for testing. Based on [Faker][faker].
 
@@ -179,26 +179,25 @@ There is also a **Snippet Trigger** (`xxfake` by default) to insert fake data di
 
 ## Licensing, thanks
 
-Icons are from [Font Awesome][font-awesome] and [Material Design Iconic Font](material-icons) (both [SIL OFL 1.1 Licence][sil]).
+Icons are from [Font Awesome][font-awesome] and [Material Design Iconic Font](material-icons) (both [SIL OFL 1.1 License][sil]).
 
 Alfred Fakum uses the following libraries:
 
-- [Faker][faker] ([MIT Licence][faker-licence])
-- [docopt][docopt] ([MIT Licence][mit])
-- [Alfred-PyWorkflow][alfred-pyworkflow] ([MIT Licence][mit])
+- [Faker][faker] ([MIT License][faker-license])
+- [docopt][docopt] ([MIT License][mit-license])
+- [Alfred-PyWorkflow][alfred-pyworkflow] ([MIT License][mit-license])
 
 [alfred-pyworkflow]: https://github.com/harrtho/alfred-pyworkflow/
 [demo]: https://raw.githubusercontent.com/harrtho/alfred-fakeum/master/demo.gif
 [docopt]: https://docopt.org/
 [downloads-shield]: https://img.shields.io/github/downloads/harrtho/alfred-fakeum/total.svg
-[faker-licence]: https://github.com/joke2k/faker/blob/master/LICENSE.txt
+[faker-license]: https://github.com/joke2k/faker/blob/master/LICENSE.txt
 [faker]: https://github.com/joke2k/faker
 [font-awesome]: https://fortawesome.github.io/Font-Awesome/
 [gh-releases]: https://github.com/harrtho/alfred-fakeum/releases/latest
-[licence-shield]: https://img.shields.io/github/license/harrtho/alfred-fakeum.svg
+[license-shield]: https://img.shields.io/github/license/harrtho/alfred-fakeum.svg
 [material-icons]: https://zavoloklom.github.io/material-design-iconic-font/
-[mit-licence]: https://opensource.org/licenses/MIT
-[mit]: https://opensource.org/licenses/MIT
+[mit-license]: https://opensource.org/licenses/MIT
 [releases]: https://github.com/harrtho/alfred-fakeum/releases
 [sil]: https://scripts.sil.org/OFL
 [version-shield]: https://img.shields.io/github/release/harrtho/alfred-fakeum.svg
