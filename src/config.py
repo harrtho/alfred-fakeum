@@ -82,7 +82,7 @@ def filter_options(query):
              icon=ICON_ISSUE),
 
         dict(title='Get Help',
-             subtitle='Open Alfred forum thread in browser',
+             subtitle='Open GitHub discussions in browser',
              valid=True,
              arg=HELP_URL,
              icon=ICON_HELP),

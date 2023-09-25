@@ -31,8 +31,8 @@ DEFAULT_SETTINGS = {
     ],
 }
 
-DOCS_URL = 'https://github.com/harrtho/alfred-fakeum/blob/master/README.md'
-HELP_URL = 'https://www.alfredforum.com/topic/5319-fakeum-—-generate-fake-test-datasets-in-alfred/'
+DOCS_URL = 'https://github.com/harrtho/alfred-fakeum/blob/main/README.md'
+HELP_URL = 'https://github.com/harrtho/alfred-fakeum/discussions'
 ISSUE_URL = 'https://github.com/harrtho/alfred-fakeum/issues'
 UPDATE_SETTINGS = {'github_slug': 'harrtho/alfred-fakeum'}
 
